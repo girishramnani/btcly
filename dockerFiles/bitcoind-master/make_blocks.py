@@ -12,5 +12,5 @@ def run():
         
 t = threading.Thread(target=run)
 t.start()
-os.system("bitcoind -regtest -printtoconsole")
+os.system("bitcoind -regtest -rpcallowip=172.17.0.0/16 -printtoconsole")
         
